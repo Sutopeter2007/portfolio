@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Összefoglaló</title>
+</head>
+<body>
+    
+<h1 id="cim">Összefoglaló</h1>
+<button id="design1">Design 1</button>
+<button id="design2">Design 2</button>
+
+<p id="szoveg">
+  </p>
+
+<main>
+    <button id="balra">Balra</button>
+    <button id="jobbra">Jobbra</button>
+    <button id="kozep">Középre</button>
+    <button id="sorkizart">Sorkizárt</button>
+
+    <br><br>
+
+    <button class="szinvalto" data-color="black" style="background-color:black;"></button>
+    <button class="szinvalto" data-color="blue" style="background-color:blue;"></button>
+    <button class="szinvalto" data-color="red" style="background-color:rgb(255, 0, 0);"></button> <br>
+    <button class="szinvalto" data-color="white" style="background-color:white; "></button>
+
+    <br><br>
+
+    <img id="magyar" class="zaszlo" src="képek/hungary.png" alt="Magyar">
+    <img id="angol" class="zaszlo" src="képek/united-kingdom.png" alt="Angol">
+    <img id="francia" class="zaszlo" src="képek/france.png" alt="Francia">
+</main>
+
+
+
+<div class="first">
+  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)"></p>
+  <p><img id="output" width="200" /></p>
+</div>
+
+
+
+
+<p>Méret:</p>
+<input type="range" id="meret" min="6" max="36">
+<br>
+<img id="kep" src="https://ocdn.eu/pulscms-transforms/1/mgtk9kpTURBXy8zMmFlMDgwNjdmYzhiZjM1NWRhY2U4MTRmOTRlNTAyOS5wbmeTlQMAzIbNBADNAkCTBc0HgM0EOJMFzQeAzQQ43gACoTABoTEA" alt="Módosítható kép" >
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prémium Pizzéria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f8f8f8;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background: tomato;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .pizza {
+            background: white;
+            margin: 15px;
+            padding: 15px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .pizza:hover {
+            transform: scale(1.05);
+        }
+        .pizza img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .cart {
+            background: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .cart:hover {
+            background: darkgreen;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        .popup button {
+            background: tomato;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Prémium Pizzéria - A Legjobb Pizzák Városban!</header>
+    <div class="menu">
+        <div class="pizza">
+            <img src="https://via.placeholder.com/250" alt="Margherita">
+            <h3>Margherita</h3>
+            <p>Ár: 2000 Ft</p>
+            <button class="cart" onclick="addToCart('Margherita', 2000)">Kosárba</button>
+        </div>
+        <div class="pizza">
+            <img src="https://via.placeholder.com/250" alt="Pepperoni">
+            <h3>Pepperoni</h3>
+            <p>Ár: 2500 Ft</p>
+            <button class="cart" onclick="addToCart('Pepperoni', 2500)">Kosárba</button>
+        </div>
+    </div>
+    <div class="popup" id="offerPopup">
+        <h3>Különleges ajánlat!</h3>
+        <p>Rendelj 2 pizzát és a harmadik féláron!</p>
+        <button onclick="closePopup()">Bezárás</button>
+    </div>
+    <script>
+        function addToCart(pizza, price) {
+            alert(`${pizza} hozzáadva a kosárhoz (${price} Ft)`);
+        }
+        function showPopup() {
+            document.getElementById('offerPopup').style.display = 'block';
+        }
+        function closePopup() {
+            document.getElementById('offerPopup').style.display = 'none';
+        }
+        setTimeout(showPopup, 5000);
+    </script>
+</body>
+</html>
