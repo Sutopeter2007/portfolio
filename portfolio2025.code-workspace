@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "portfolio2025",
+			"path": "."
+		},
+		{
+			"name": "kepek",
+			"path": "../projektweboldal2024/kepek"
+		},
+		{
+			"name": "bootstrap-5.0.2-dist",
+			"path": "../projektweboldal2024/bootstrap-5.0.2-dist"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio2025",
+		"liveServer.settings.port": 5501
+	}
+}

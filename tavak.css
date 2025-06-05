@@ -1,0 +1,183 @@
+body
+{
+background-image	:  url('grass.jpg')	;
+font-family		:  Verdana		;
+font-weight		:  bol			;
+color			:  #FFF			;
+}
+
+
+h1
+{
+text-align		:  center		;
+}
+
+
+h1#focim ,  div.nagydoboz
+{
+background-color	:  #08F			;
+background-image	:  url('splash.png')	;
+background-repeat	:  no-repeat		;
+background-position	:  bottom right		;
+box-shadow		:  0 0 12px #048	;
+}
+
+
+h1#focim
+{
+width			:  420px		;
+margin			:  auto			;
+padding			:  32px			;
+
+border-radius		:  32px			;
+
+font-size		:  24px			;
+text-shadow		:   3px 3px #048	;
+line-height		:  48px			;
+}
+
+div.nagydoboz
+{
+min-width		:  300px		;
+min-height		:  240px		;
+padding			:  40px			;
+
+border-radius		:  96px			;
+
+text-align		:  justify		;
+font-size		:  14px			;
+}
+
+div.nagydoboz:nth-child(odd)
+{
+margin			:  32px 32px 64px 240px ;
+}
+
+div.nagydoboz:nth-child(even)
+{
+margin			:  32px 240px 64px 32px	;
+}
+
+
+h1.toneve
+{
+margin			:  0 0 24px 0		;
+border-bottom		:  solid 2px white	;
+font-size		:  20px			;
+}
+
+table.adatok
+{
+float			:  right		;
+border			:  solid 1px white	;
+border-radius		:  6px			;
+box-shadow		:  4px 4px 8px #048	;
+margin			:  0 0 12px 18px	;
+}
+
+table.adatok tr td
+{
+background-color	:  #FFF			;
+padding			:   4px 8px		;
+vertical-align		:  top			;
+font-size		:  12px			;
+color			:  #048			;
+}
+
+table.adatok tr td:nth-child(1)
+{
+font-weight		:  bold			;
+}
+
+table.adatok tr td:nth-child(2)
+{
+width			:  210px		;
+}
+
+table.adatok img
+{
+float			:  left			;
+height			:  20px			;
+}
+
+
+div.kiskep
+{
+float			:  left			;
+width			:  140px		;
+height			:  140px		;
+margin			:    4px		;
+border-radius		:  6px			;
+box-shadow		:  4px 4px 8px #048	;
+background-color	:  white		;
+text-align		:  center		;
+
+line-height		:  136px		;
+}
+
+div.kiskep:hover
+{
+background-color	:  #FF0			;
+}
+
+div.kiskep img
+{
+max-width		:  128px		;
+max-height		:  128px		;
+border-radius		:  2px			;
+vertical-align		:  middle		;
+}
+
+
+blockquote
+{
+margin-left		:  4px			;
+padding			:  4px  16px		;
+border-left		:  double 6px white	;
+border-radius		:  8px			;
+background-color	:  #09F			;
+width			:  250px		;
+box-shadow		:  2px 2px 2px #048	;
+}
+
+
+a
+{
+text-decoration		:  none			;
+}
+
+
+table.adatok a
+{
+color			:  #048			;
+}
+
+table.adatok tr td.map:hover
+{
+background-color	:  #FF0			;
+}
+
+
+ul a
+{
+display			:  inline-block		;
+width			:  210px		;
+color			:  white		;
+font-weight		:  bold			;
+}
+
+ul a:hover
+{
+background-color	:  #FF0			;
+color			:  #048			;
+}
+
+li
+{
+list-style-image	:  url('suw.png')	;
+}
+
+li:hover
+{
+list-style-image	:  url('sun.png')	;
+}

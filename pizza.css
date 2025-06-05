@@ -1,0 +1,67 @@
+body{
+  background-image: url(https://static.vecteezy.com/system/resources/previews/003/226/074/large_2x/wood-texture-background-free-vector.jpg);
+  background-repeat: no-repeat;
+}
+
+
+img{
+ 
+  padding: 2px;
+  
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    height: 100px;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: medium;
+  }
+  
+  li a:hover {
+    background-color: #630101da;
+  }
+
+.ertekeles{
+    width: 15%;
+    float: right;
+    
+    }
+   
+
+
+#logo{
+  width: 4.1%;
+  float: left;
+  
+}
+nav{
+  background-color: rgb(214, 19, 19);
+  width: 40%;
+}
+header{
+  background-color: rgb(214, 19, 19);
+}
+
+a{
+
+  font-family: verdana;
+}
+
